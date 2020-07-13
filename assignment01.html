@@ -11,7 +11,15 @@
 		{ athlete: 'Kevin De Bruyne', team: 'Manchester City', income: 5980000 },
 		{ athlete: 'Paul Pogba', team: 'Manchester United', income: 15080000 }
     ]
-	//write your code here
-    // const athleteIncomeStrings = your code 
-    // console.log(athleteIncomeStrings);
+	
+    const athleteIncomeStrings = athleteData.filter(data => {
+        if(data.athlete == 'Mohamed Salah'){
+            return data;
+        }
+    });
+    
+	athleteIncomeStrings.forEach(data => {
+		console.log(data.athlete.concat(" in ")+data.team.concat(" earned ")+data.income+" euros");
+	});
+
 </script>

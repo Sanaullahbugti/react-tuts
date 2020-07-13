@@ -27,5 +27,13 @@
          { athlete: 'Paul Pogba', team: 'Manchester United', income: 15080000 }
      ];
     
-  //your code 
+    const popular = athleteData.filter(data=> {
+        if(data.income > 10000000){
+            return data;
+        }
+    }).map(rec => {
+        return rec.athlete+" is a great football player";
+    });
+
+    console.log(popular);
     </script>

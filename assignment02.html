@@ -23,5 +23,12 @@
          { athlete: 'Kevin De Bruyne', team: 'Manchester City', income: 5980000 },
          { athlete: 'Paul Pogba', team: 'Manchester United', income: 15080000 }
      ];
-     //your code 
+     
+     const results = athleteData.filter(ath => {
+        if(String(ath.income).length > 7){
+            return ath;
+        }
+     });
+
+     console.log(results);
      </script>
